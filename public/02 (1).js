@@ -33,8 +33,8 @@ function Greeting({initialName = ''}) {
     window.localStorage.setItem('name', name)
     window.localStorage.setItem('nameUC', nameUC)
     setCount(count + 1)
-  }, [name, nameUC])  // [] é a lista de dependências, ou seja, esse useEffect é para ser chamado
-  // apenas quando a variável name ou a variável nameUC sofrer alteração.
+  }, [name])  // [] é a lista de dependências, ou seja, esse useEffect é para ser chamado
+  // apenas quando a variável name sofrer alteração
 
   return (
     <div>
